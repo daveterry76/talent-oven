@@ -399,13 +399,14 @@ hr {
     display: flex;
     flex-wrap: wrap;
     height: 60vh;
+    margin-top: 2.5rem;
     padding: 0.3rem;
+    width: 100vh;
   }
   .home__heading--one {
     color: rgb(39, 38, 38);
     font-family: 'Courier Prime', monospace;
     font-size: 20px;
-    margin-top: 2.5rem;
 }
 
 
