@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalentOven</title>
+
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Poppins&display=swap" rel="stylesheet">    
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <div id="nav" class="nav__navbar--fixed">
+        <h2 class="nav__title">TalentOven</h2>
+        <div id="nav__links--color--change" class="nav__links">
+            <a class="nav__link nav__links--size nav__link--home" href="/" target="_self">Home</a>
+            <a class="nav__link nav__links--size nav__link--talents" href="#talents" target="_self">Talents</a>
+            <a class="nav__link nav__links--size nav__link--clients" href="#clients" target="_self">Clients</a>
+            <a class="nav__link nav__links--size nav__link--contact" href="#contact" target="_self">Contact</a>
+        </div>
+        <div class="nav__hamburger">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="nav__hamburger--open">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="nav__hamburger--close">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg> 
+            <div class="nav__links--small--and--medium">
+                <a class="nav__link--small--and--medium" href="#" target="_self">Home</a>
+                <a class="nav__link--small--and--medium" href="#talents" target="_self">Talents</a>
+                <a class="nav__link--small--and--medium" href="#clients" target="_self">Clients</a>
+                <a class="nav__link--small--and--medium" href="#contact" target="_self">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main -->
+    <div class="main__container" id="main">
+        <!-- Home -->
+        <div class="home__container">
+            <h1 class="home__heading--one">
+                <span class="home__heading--text--1">Welcome to TalentOven</span>
+                <span class="home__heading--text--2">Where talents are groomed</span>
+                <span class="home__heading--text--3">And solutions are baked</span>
+            </h1>
+        </div>
+
+        <!-- Talents -->
+        <div id="talents" class="talents__container">
+            <div class="talents__heading">
+                <h2 class="talents__heading--one" data-aos="fade-up-right">
+                    Talents
+                </h2>
+                <hr data-aos="fade-up-right" />
+                <p class="talents__paragraph" data-aos="fade-up-right">
+                    These are some of the talents we work with to cook up solutions globally
+                </p>
+            </div>
+            <div class="talents__cards" data-aos="fade-up-left">
+                <div class="talents__card" data-aos="fade-up">
+                    <img class="talent__profile--image" src="assets/morrison--picture.png" alt="edono morrison" />
+                    <h3 class="talent__profile--name">Edono Morrison</h3>
+                    <p class="talent__profile--summary">Backend Engineer</p>
+                    <a class="talent__profile--portfolio--link" href="https://github.com/sirmorrison" target="_blank">
+                        <div class="talent__profile--link--container">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="talent__profile--link">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                            </svg>
+                            <h3>Link to portfolio</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="talents__card" data-aos="fade-up">
+                    <img class="talent__profile--image" src="assets/talents-pic.jpeg" alt="wisdom arerosuoghene" />
+                    <h3 class="talent__profile--name">Arerosuoghene Wisdom</h3>
+                    <p class="talent__profile--summary">CTO</p>
+                    <a class="talent__profile--portfolio--link" href="https://itswisdomagain.github.io/" target="_blank">
+                        <div class="talent__profile--link--container">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="talent__profile--link">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                            </svg>
+                            <h3>Link to portfolio</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="talents__card" data-aos="fade-up">
+                    <img class="talent__profile--image" src="assets/david--picture.jpg" alt="dappa david" />
+                    <h3 class="talent__profile--name">Dappa David</h3>
+                    <p class="talent__profile--summary">Frontend Engineer</p>
+                    <a class="talent__profile--portfolio--link" href="https://github.com/daveterry76" target="_blank">
+                        <div class="talent__profile--link--container">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="talent__profile--link">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                            </svg>
+                            <h3>Link to portfolio</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="talents__card" data-aos="fade-up">
+                    <img class="talent__profile--image" src="assets/talents-pic.jpeg" alt="philemon ukane" />
+                    <h3 class="talent__profile--name">Philemon Ukane</h3>
+                    <p class="talent__profile--summary">Backend Engineer</p>
+                    <a class="talent__profile--portfolio--link" href="https://github.com/philemonukane" target="_blank">
+                        <div class="talent__profile--link--container">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="talent__profile--link">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                            </svg>
+                            <h3>Link to portfolio</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="talents__card" data-aos="fade-up">
+                    <img class="talent__profile--image" src="assets/esther--picture.jpg" alt="esther nmawanyi" />
+                    <h3 class="talent__profile--name">Esther Nmawanyi</h3>
+                    <p class="talent__profile--summary">UI/UX Designer</p>
+                    <a class="talent__profile--portfolio--link" href="https://www.behance.net/estherannnafdc" target="_blank">
+                        <div class="talent__profile--link--container">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="talent__profile--link">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                            </svg>
+                            <h3>Link to portfolio</h3>
+                        </div>
+                    </a>
+                </div>
+                <!-- <div class="talents__card" data-aos="fade-up">
+                    <img class="talent__profile--image" src="assets/david--picture.jpg" alt="picture of young talent" />
+                    <h3 class="talent__profile--name">Dappa David</h3>
+                    <p class="talent__profile--summary">A resilient developer with 1+ experience</p>
+                </div> -->
+            </div>
+        </div>
+
+        <!-- Clients -->
+        <div id="clients" class="clients__container">
+            <div class="clients__heading" data-aos="zoom-out-right">
+                <h2 class="clients__heading--one">
+                    Clients
+                </h2>
+                <hr />
+                <p class="clients__paragraph">
+                    Some of the clients we’ve worked with in recent times
+                </p>
+            </div>
+            <div class="clients__cards">
+                <div class="clients__card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                    <img class="client__profile--image" src="assets/decred--picture.png" alt="decred" />
+                    <h3 class="client__profile--name">Decred</h3>
+                    <p class="client__profile--summary">#blockchain #decentralization #digitalcurrency</p>
+                    <a class="client__profile--portfolio--link" href="https://decred.org/" target="_blank">
+                        <div class="client__profile--link--container">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="client__profile--link">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                            </svg>
+                            <h3>Link to website</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="clients__card" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                    <img class="client__profile--image" src="assets/fewchore--picture.png" alt="fewchore" />
+                    <h3 class="client__profile--name">Fewchore Financial Company Limited</h3>
+                    <p class="client__profile--summary">#fintech #smartinvesting #futurefinance</p>
+                    <a class="client__profile--portfolio--link" href="https://fewchorefinance.com/" target="_blank">
+                        <div class="client__profile--link--container">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="client__profile--link">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                            </svg>
+                            <h3>Link to website</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="clients__card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                    <img class="client__profile--image" src="assets/hero--picture.jpeg" alt="hero lager" />
+                    <h3 class="client__profile--name">Hero Lager Beer</h3>
+                    <p class="client__profile--summary">#drinkresponsibly #herolager #heroictaste</p>
+                    <a class="client__profile--portfolio--link" href="https://worthyhero.org/" target="_blank">
+                        <div class="client__profile--link--container">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="client__profile--link">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                            </svg>
+                            <h3>Link to website</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div id="contact" class="contact__container">
+            <div class="contact__heading" data-aos="zoom-in-right">
+               <h1 class="contact__heading--one">
+                    Get in touch
+               </h1>
+               <hr /> 
+               <p class="contact__paragraph">
+                    Are you a company in need of some software solution? <br /> Or an upcoming talent desirous of world-class grooming?
+               </p>
+            </div>
+            <div class="contact__content" data-aos="zoom-in-left">
+                <h2>Reach out to us through our channels.</h2>
+                <div>
+                    <div class="contact__icon">
+                        <img class="contact__icon--image" src="assets/icons8-whatsapp.svg" alt="whatsapp" />
+                        <p class="contact__icon--text">+234 903 672 8893</p>
+                    </div>
+                    <div class="contact__icon">
+                        <img class="contact__icon--image" src="assets/icons8-email-50.png" alt="email" />
+                        <p class="contact__icon--text">talentoven@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+
+        <div class="footer__container">
+            <div class="footer__text">
+                &copy; 2023 TalentOven
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
