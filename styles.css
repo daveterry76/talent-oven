@@ -76,7 +76,6 @@ hr {
 
 .nav__hamburger {
   display: none;
-  position: relative;
 }
 
 .nav__hamburger--open,
