@@ -59,6 +59,7 @@ navBarOpen.addEventListener('click', () => {
     });
     navBarBorderBottom.style.borderBottomStyle = 'solid';
     navBarBorderBottom.style.borderBottomWidth = '1px';
+    navBarSmMd.style.zIndex = '10';
 })
 
 navBarClose.addEventListener('click', () => {
