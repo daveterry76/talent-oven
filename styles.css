@@ -403,7 +403,7 @@ hr {
   .home__heading--one {
     color: rgb(39, 38, 38);
     font-family: 'Courier Prime', monospace;
-    font-size: 24px;
+    font-size: 16px;
 }
 
 
@@ -415,7 +415,7 @@ hr {
     }
     73.3333%,
     93.3333% {
-      width: 20ch;
+      width: 22.5ch;
     }
   }
   
@@ -428,7 +428,7 @@ hr {
     }
     39.9999%,
     59.9999% {
-      width: 22ch;
+      width: 24.5ch;
     }
   }
   
@@ -440,7 +440,7 @@ hr {
     }
     6.6666%,
     26.6666% {
-      width: 19ch;
+      width: 20.5ch;
     }
   }
 
@@ -520,7 +520,7 @@ hr {
 @media (min-width: 481px) and (max-width: 767px) {
   .home__heading--one {
     font-family: 'Courier Prime', monospace;
-    font-size: 25px;
+    font-size: 16px;
 }
 }
 
