@@ -3,6 +3,7 @@ AOS.init();
 
 const navBar = document.getElementById('nav'),
 navBarLink = document.querySelectorAll('.nav__link'),
+navBarHamburger = document.querySelector('.nav__hamburger'),
 navBarOpen = document.querySelector('.nav__hamburger--open'),
 navBarClose = document.querySelector('.nav__hamburger--close'),
 navBarSmMd = document.querySelector('.nav__links--small--and--medium'),
@@ -26,6 +27,9 @@ window.addEventListener('scroll', () => {
         navLinkSmMd.forEach(link => {
             link.style.color ="#000";
         })
+
+        navBarHamburger.style.right = '80px'
+
     } else {
         navBar.style.backgroundColor = '#000';
         navBar.style.color = '#fff';
@@ -36,6 +40,7 @@ window.addEventListener('scroll', () => {
         navLinkSmMd.forEach(link => {
             link.style.color ="#fff";
         })
+        navBarHamburger.style.right = '12px'
     }
 })
 
