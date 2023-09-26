@@ -367,6 +367,7 @@ hr {
   color: #fff;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   padding: 5rem 3.5rem 4rem 5rem;
@@ -383,7 +384,10 @@ hr {
 
 .footer__text {
   color: #fff;
-  font-size: medium;
+  flex-basis: 100%;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  opacity: 60%;
 }
 
 .footer__newsletter {
@@ -533,8 +537,6 @@ hr {
     margin-block: 1rem;
   }
 
-
-
   .home__heading--container {
     display: flex;
     flex-wrap: wrap;
@@ -545,7 +547,8 @@ hr {
   .home__heading--one {
     color: rgb(39, 38, 38);
     font-family: 'Courier Prime', monospace;
-    font-size: 20px;
+    font-size: 37px;
+    margin-left: 8.5rem;
 }
 
   .home__image--one,
@@ -683,7 +686,8 @@ hr {
 
 .footer__links {
   margin-top: 2.5rem;
-  flex-direction: column;
+  /* flex-direction: column; */
+  gap: 6rem;
   width: 100%;
 }
 
@@ -694,7 +698,7 @@ hr {
 @media (min-width: 481px) and (max-width: 767px) {
   .home__heading--one {
     font-family: 'Courier Prime', monospace;
-    font-size: 20px;
+    font-size: 30px;
 }
 }
 
@@ -703,7 +707,7 @@ hr {
 @media (min-width: 768px) and (max-width: 1024px) {
   .home__heading--one {
     font-family: 'Courier Prime', monospace;
-    font-size: 35px;
+    font-size: 50px;
   }
 
   .talents__card,
