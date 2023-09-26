@@ -5,10 +5,12 @@
 
 
 body {
-    background-color: rgb(241, 237, 219);
+    /* background-color: rgb(241, 237, 219); */
+    background-color: rgb(229, 228, 222);
     color-scheme: light dark;
     font-family: 'Poppins', sans-serif;
     padding: 0;
+    overflow-x: hidden;
 }
 
 a,
@@ -85,12 +87,16 @@ hr {
 }
 
 .home__container {
+  display: flex;
+}
+
+.home__heading--container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     padding: 1.5rem;
-    width: fit-content;
+    width: 55%;
 }
 
 
@@ -119,6 +125,7 @@ hr {
   .home__heading--text--1, 
   .home__heading--text--2, 
   .home__heading--text--3 {
+    font-size: 1ch;
     overflow: hidden;
     white-space: nowrap;
     display: inline-block;
@@ -139,6 +146,36 @@ hr {
     animation-timing-function: steps(1, end);
   }
   
+
+  .home__image--container {
+    position: relative;
+  }
+
+  .home__image--one,
+  .home__image--two,
+  .home__image--three {
+    position: absolute;
+    width: 14rem;
+    height: 14rem;
+  }
+
+  .home__image--one {
+    top: 70px;
+    left: 240px;
+  }
+
+  .home__image--two {
+    top: 300px;
+    left: 200px;
+  }
+
+  .home__image--three {
+    top: 150px;
+    left: -1px;
+  }
+
+
+
   @keyframes text3 {
     0%,
     66.6666%,
@@ -205,9 +242,8 @@ hr {
 
 
 .talents__heading--one,
-.clients__heading--one,
-.contact__heading--one {
-  font-size: 70px;
+.clients__heading--one {
+  font-size: 50px;
   text-transform: uppercase;
 }
 
@@ -237,7 +273,7 @@ hr {
     rgba(255, 255, 255, .75), 70%, 
     rgba(255, 255, 255, .25)
   );
-  border: 1px solid #000;
+  border: 0 solid #000;
   border-radius: 25px;
   display: flex;
   flex-direction: column;
@@ -328,17 +364,121 @@ hr {
 
 .footer__container {
   background-color: #000;
+  color: #fff;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   margin: 0;
-  padding-block: 2rem;
-  width: 100%;
+  padding: 5rem 3.5rem 4rem 5rem;
+  /* width: 100%; */
+}
+
+.footer__profile--img {
+  background-color: gray;
+  border-radius: 50%;
+  padding: 0.5rem;
+  padding-inline: 1rem;
+  width: fit-content;
 }
 
 .footer__text {
   color: #fff;
   font-size: medium;
 }
+
+.footer__newsletter {
+  width: 40%;
+}
+
+.footer__newsletter--form {
+  color: #fff;
+  margin-block: 1.7rem;
+  width: fit-content;
+}
+
+.footer__newsletter--label {
+  font-size: 15px;
+  margin-block: 3rem;
+}
+
+.footer__newsletter--input {
+  background-color: transparent;
+  border: 0.1px solid #fff;
+  border-radius: 10px;
+  margin-top: 0.6rem;
+  margin-right: 0.8rem;
+  padding-inline: 3rem;
+  padding-left: 1rem;
+  padding-block: 0.6rem;
+}
+
+.footer__newsletter--button {
+  background-color: #fff;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  border-radius: 20px;
+  padding-inline: 2rem;
+  padding-block: 0.6rem;
+}
+
+.footer__newsletter--button:hover {
+  background-color: #000;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.footer__newsletter--social--links {
+  margin-top: 4rem;
+}
+
+.footer__newsletter--social--links h3 {
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer__newsletter--social--icon {
+  background-color: #fff;
+  border-radius: 50%;
+  height: 1rem;
+  margin-right: 0.6rem;
+  padding: 0.5rem;
+  padding-inline: 0.1rem;
+  width: 2rem;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4rem;
+  width: 60%;
+}
+
+.footer-container svg {
+  background-color: #fff;
+}
+
+.footer__company--links a,
+.footer__talents--links a,
+.footer__findjobs--links a,
+.footer__blog--links a
+ {
+  color: #fff;
+  display: block;
+  font-size: 12.5px;
+  margin-block: 0.5rem;
+}
+
+.footer__company--links a:hover,
+.footer__talents--links a:hover,
+.footer__findjobs--links a:hover,
+.footer__blog--links a:hover {
+  text-decoration: underline;
+}
+
+
 
 
 
@@ -395,7 +535,7 @@ hr {
 
 
 
-  .home__container {
+  .home__heading--container {
     display: flex;
     flex-wrap: wrap;
     height: 60vh;
@@ -407,6 +547,12 @@ hr {
     font-family: 'Courier Prime', monospace;
     font-size: 20px;
 }
+
+  .home__image--one,
+  .home__image--two,
+  .home__image--three {
+    display: none;
+  }
 
 
 @keyframes text3 {
@@ -514,6 +660,32 @@ hr {
   margin-top: 0.5rem;
 }
 
+.footer__container {
+  flex-direction: column;
+  padding-inline: 2rem;
+  /* width: fit-content; */
+}
+
+.footer__newsletter {
+  width: 100%;
+}
+
+.footer__newsletter--input {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.footer__newsletter--button {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+
+.footer__links {
+  margin-top: 2.5rem;
+  flex-direction: column;
+  width: 100%;
+}
 
 
 }
@@ -540,6 +712,11 @@ hr {
     height: 60%;
     margin-block: 1.5rem;
     width: 30%;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   /* .nav__links {

@@ -18,7 +18,7 @@ window.addEventListener('scroll', () => {
     const verticalScroll = window.scrollY;
 
     if (verticalScroll < 200 ) {
-        navBar.style.backgroundColor = 'rgb(241, 237, 219)';
+        navBar.style.backgroundColor = 'rgb(229, 228, 222)';
         navBar.style.color = "#000";
         // navBarLink.style.color = "#000"; 
         navBarLink.forEach(link => {
