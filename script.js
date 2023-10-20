@@ -18,20 +18,21 @@ window.addEventListener('scroll', () => {
     const verticalScroll = window.scrollY;
 
     if (verticalScroll < 200 ) {
-        navBar.style.backgroundColor = 'rgb(229, 228, 222)';
+        navBarHamburger.style.right = '100px'
+        navBar.style.backgroundColor = '#f0eff2';
         navBar.style.color = "#000";
         // navBarLink.style.color = "#000"; 
         navBarLink.forEach(link => {
-            link.style.color = "#000";
+            link.style.color = "#4A2D86";
         })
         navLinkSmMd.forEach(link => {
             link.style.color ="#000";
         })
 
-        navBarHamburger.style.right = '80px'
 
     } else {
-        navBar.style.backgroundColor = '#000';
+        navBarHamburger.style.right = '15px'
+        navBar.style.backgroundColor = '#4A2D86';
         navBar.style.color = '#fff';
         // navBarLink.style.color = "#fff";
         navBarLink.forEach(link => {
@@ -40,7 +41,6 @@ window.addEventListener('scroll', () => {
         navLinkSmMd.forEach(link => {
             link.style.color ="#fff";
         })
-        navBarHamburger.style.right = '12px'
     }
 })
 

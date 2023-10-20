@@ -6,7 +6,7 @@
 
 body {
     /* background-color: rgb(241, 237, 219); */
-    background-color: rgb(229, 228, 222);
+    /* background-color: #e5e2ed; */
     color-scheme: light dark;
     font-family: 'Poppins', sans-serif;
     padding: 0;
@@ -69,6 +69,7 @@ hr {
 }
 
 .nav__link {
+    color: #4A2D86;
     text-decoration: none;
 }
 
@@ -87,7 +88,9 @@ hr {
 }
 
 .home__container {
+  background-color: #f0eff2;
   display: flex;
+  height: 100vh;
 }
 
 .home__heading--container {
@@ -95,8 +98,20 @@ hr {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: hidden;
     padding: 1.5rem;
+    position: relative;
     width: 55%;
+}
+
+.home__heading--bg--image {
+  opacity: 0.25;
+  position: absolute;
+  left: 2;
+  top: 2;
+  width: 100%;
+  height: auto;
+  display: none;
 }
 
 
@@ -108,6 +123,7 @@ hr {
     align-items: center;
     font-family: 'Courier Prime', monospace;
     font-size: 70px;
+    position: relative;
 }
 
 .home__heading--text--1 {
@@ -154,6 +170,7 @@ hr {
   .home__image--one,
   .home__image--two,
   .home__image--three {
+    color: #4A2D86;
     position: absolute;
     width: 14rem;
     height: 14rem;
@@ -226,11 +243,17 @@ hr {
 .talents__container,
 .clients__container,
 .contact__container {
-  margin-top: 13rem;
+  /* margin-top: 13rem; */
   padding: 1.5rem;
+  padding-top: 5rem;
+}
+
+.talents__container {
+  background-color: #e5e2ed;
 }
 
 .contact__container {
+  /* background-color: #e1e0e3; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -254,6 +277,10 @@ hr {
   line-height: 2;
 }
 
+.clients__paragraph {
+  text-align: center;
+}
+
 .talents__cards,
 .clients__cards {
   display: flex;
@@ -265,15 +292,15 @@ hr {
 
 .talents__card,
 .clients__card {
-  box-shadow: 0 0 10px 1px rgba(0, 0, 0, .25);
+  /* box-shadow: 0 0 10px 1px rgba(0, 0, 0, .25); */
   backdrop-filter: blur(15px);
-  background: linear-gradient(
+  /* background: linear-gradient(
     120deg,
     rgba(255, 255, 255, .25),
     rgba(255, 255, 255, .75), 70%, 
     rgba(255, 255, 255, .25)
-  );
-  border: 0 solid #000;
+  ); */
+  /* border: 0 solid #000; */
   border-radius: 25px;
   display: flex;
   flex-direction: column;
@@ -285,9 +312,8 @@ hr {
   padding-block: 1rem;
 }
 
-.talents__card:hover,
-.clients__card:hover {
-  background-color: rgb(249, 238, 191);
+.talents__card:hover {
+  background-color: #dbd4ea;
   cursor: pointer;
 }
 
@@ -308,7 +334,6 @@ hr {
   width: 100%;
 }
 
-
 .talent__profile--name,
 .client__profile--name {
   font-size: 25px;
@@ -327,7 +352,12 @@ hr {
 .client__profile--link--container {
   display: flex;
   gap: 10px;
+  margin-left: 2.5rem;
   width: fit-content;
+}
+
+.client__profile--link--container {
+  margin-left: 0;
 }
 
 .talent__profile--link,
@@ -363,7 +393,7 @@ hr {
 
 
 .footer__container {
-  background-color: #000;
+  background-color: #4A2D86;
   color: #fff;
   display: flex;
   flex-direction: row;
@@ -506,7 +536,7 @@ hr {
     display: flex;
     flex-direction: column;
     position: relative;
-    right: 80px;
+    right: 100px;
     text-align: right;
   }
 
@@ -532,6 +562,16 @@ hr {
     display: none;
     padding-inline: 2rem;
   }
+/* 
+  .home__container {
+    background: 
+        url('assets/header-picture-1.png') center no-repeat;
+        /* url('assets/header-picture-2.png') left center no-repeat,
+        url('assets/header-picture-3.png') right center no-repeat; */
+    /* background-size: 250px; */
+    /* Adjust the opacity as needed, where 0 is fully transparent and 1 is fully opaque */
+/* } */ */
+
 
   .nav__link--small--and--medium {
     margin-block: 1rem;
@@ -541,14 +581,24 @@ hr {
     display: flex;
     flex-wrap: wrap;
     height: 60vh;
+    justify-content: center;
     margin-top: 4rem;
     padding: 0.3rem;
+    left: 12px;
+    width: 90%;
   }
+
   .home__heading--one {
     color: rgb(39, 38, 38);
     font-family: 'Courier Prime', monospace;
-    font-size: 37px;
-    margin-left: 8.5rem;
+    font-size: 35px;
+    margin-left: 1rem;
+}
+
+.home__heading--bg--image {
+  display: flex;
+  /* height: 100%; */
+  /* width: 100%; */
 }
 
   .home__image--one,
@@ -623,12 +673,12 @@ hr {
     margin-block: 1.5rem;
     width: 67%;
   }
-
+/* 
   .talents__container,
   .clients__container,
   .contact__container {
   margin-block: 7rem;
-}
+} */
 
 .talent__profile--name,
 .client__profile--name {
@@ -705,6 +755,28 @@ hr {
 
 /* Medium Screens (high end) */
 @media (min-width: 768px) and (max-width: 1024px) {
+  .nav__link--small--and--medium {
+    margin-block: 1rem;
+  }
+  
+  .home__container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 3rem;
+  }
+
+  .home__heading--container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 60vh;
+    justify-content: center;
+    margin-top: 0;
+    padding: 0.3rem;
+    left: 12px;
+    width: 70%;
+  }
+
   .home__heading--one {
     font-family: 'Courier Prime', monospace;
     font-size: 50px;
