@@ -57,7 +57,7 @@ hr {
   cursor: pointer;
   display: none;
   position: absolute;
-  bottom: 300px;
+  bottom: 50px;
   right: 20px;
   text-align: center;
 }
@@ -621,7 +621,7 @@ hr {
   .home__heading--one {
     color: rgb(39, 38, 38);
     font-family: 'Courier Prime', monospace;
-    font-size: 33px;
+    font-size: 30px;
     margin-left: 1rem;
 }
 
@@ -778,7 +778,7 @@ hr {
 @media (min-width: 481px) and (max-width: 767px) {
   .home__heading--one {
     font-family: 'Courier Prime', monospace;
-    font-size: 25px;
+    font-size: 35px;
 }
 }
 

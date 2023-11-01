@@ -57,6 +57,7 @@ window.addEventListener('scroll', () => {
 
 navBarOpen.addEventListener('click', () => {
     navBarClose.style.display = 'block';
+    navBarHamburger.style.paddingRight = '3rem';
     navBarOpen.style.display = 'none';
     navBarSmMd.style.display = 'block';
     navLinkSmMd.forEach(link => {
@@ -78,6 +79,7 @@ navBarClose.addEventListener('click', () => {
     // navBarBorderBottom.style.borderBottomStyle = 'none';
     navBarBorderBottom.style.borderBottomStyle = 'solid';
     navBarBorderBottom.style.borderBottomWidth = '1px';
+    navBarHamburger.style.paddingRight = '0';
 })
 
 navLinkSmMd.forEach(link => {
